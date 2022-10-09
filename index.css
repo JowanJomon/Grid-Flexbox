@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  padding: 0 4em;
+}
+:root {
+  --pr: rgb(68, 157, 91);
+  --sc: rgb(119, 119, 119);
+  --blk: rgb(21, 21, 21);
+  --wht: rgb(252, 252, 252);
+  --prfont: "Outfit", sans-serif;
+  --scfont: "Bochild", sans-serif;
+  --h3: 2.1em;
+  --h2: 4em;
+  --bodytext: 1.5em;
+}
+
+/* @media only screen and (min-width: 800px) {
+  
+ 
+}
+@media only screen and (max-width: 799px) {
+     
+}
+@media only screen and (min-width: 800px) {
+ 
+}
+@media only screen and (max-width: 799px) {
+  
+  
+ 
+} */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: var(--wht);
+  padding-top: 2em;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+}
+.navlogo {
+  padding: 10px;
+  scale: 1.8;
+}
+.link {
+  list-style: none;
+}
+a {
+  font-family: var(--scfont);
+  text-decoration: none;
+  color: var(--pr);
+  font-size: var(--bodytext);
+  transition: all 0.3s;
+}
+
+a:hover {
+  font-family: var(--scfont);
+  text-decoration: none;
+  color: var(--blk);
+  scale: 1.3;
+  transition: all 0.3s;
+  font-size: var(--bodytext);
+}
+
+.intro {
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    "a a a a"
+    "d b b b"
+    "c c . .";
+}
+.introimg {
+  width: 30em;
+  grid-area: d;
+}
+.introh2 {
+  margin-top: 1em;
+  grid-area: a;
+  font-size: var(--h2);
+  color: var(--pr);
+  font-family: var(--scfont);
+}
+.button {
+  font-size: var(--h3);
+  padding: 10px 25px;
+  border: none;
+  color: white;
+  background: var(--pr);
+  border-radius: 1em;
+  width: 7em;
+  grid-area: c;
+  margin-top: 0.5em;
+  font-family: var(--scfont);
+  justify-self: center;
+}
+.button:hover {
+  background-color: black;
+}
+.introp {
+  width: auto;
+  margin-left: 8em;
+  grid-area: b;
+  align-self: center;
+  font-size: var(--bodytext);
+  text-justify: distribute;
+}
+
+.servicesheading {
+  font-family: var(--scfont);
+  font-size: var(--h3);
+  margin-top: 2em;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6em;
+  padding-bottom: 2em;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: flex-start;
+}
+.servicep {
+  font-family: var(--prfont);
+  text-align: center;
+  font-size: var(--bodytext);
+}
+.serviceimg {
+}
+.serviceheading {
+  font-family: var(--scfont);
+  font-size: var(--bodytext);
+  color: var(--pr);
+}
+
+.servicebutton {
+  font-size: var(--bodytext);
+}
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  padding: 3em 0;
+}
+.reviesheading {
+  font-size: var(--h3);
+  font-family: var(--scfont);
+  margin-top: 2em;
+}
+.review,
+.review1 {
+  align-self: center;
+  text-align: center;
+  margin-top: 1em;
+  padding: 3em;
+}
+
+.reviewimg {
+  border-radius: 7em;
+  width: 60%;
+}
+.reviewheading {
+  font-size: var(--h3);
+  font-family: var(--scfont);
+  margin-top: 1em;
+  color: var(--pr);
+}
+.reviewp {
+  font-size: var(--bodytext);
+  font-family: var(--prfont);
+}
+
+.footer {
+  background-color: var(--pr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em;
+  color: aliceblue;
+}
+.footerlinks i {
+  padding: 2em;
+  font-size: var(--h2);
+}
+
+.footer h2 {
+  font-family: var(--scfont);
+  font-size: var(--h3);
+}
