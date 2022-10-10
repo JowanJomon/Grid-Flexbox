@@ -2,10 +2,14 @@
   margin: 0;
   padding: 0;
   font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
 }
+
 body {
-  padding: 0 4em;
+  padding: 2rem;
+  background-color: var(--wht);
 }
+
 :root {
   --pr: rgb(68, 157, 91);
   --sc: rgb(119, 119, 119);
@@ -13,26 +17,14 @@ body {
   --wht: rgb(252, 252, 252);
   --prfont: "Outfit", sans-serif;
   --scfont: "Bochild", sans-serif;
-  --h3: 2.1em;
-  --h2: 4em;
-  --bodytext: 1.5em;
+  --h3: 2.1rem;
+  --h2: 4rem;
+  --bodytext: 1.5rem;
 }
 
-/* @media only screen and (min-width: 800px) {
-  
- 
+html {
+  font-size: 62.5%;
 }
-@media only screen and (max-width: 799px) {
-     
-}
-@media only screen and (min-width: 800px) {
- 
-}
-@media only screen and (max-width: 799px) {
-  
-  
- 
-} */
 
 .nav {
   display: flex;
@@ -76,15 +68,15 @@ a:hover {
   gap: 1em;
   grid-template-areas:
     "a a a a"
-    "d b b b"
+    "d d b b"
     "c c . .";
 }
 .introimg {
-  width: 30em;
+  width: 50rem;
   grid-area: d;
 }
 .introh2 {
-  margin-top: 1em;
+  margin-top: 5rem;
   grid-area: a;
   font-size: var(--h2);
   color: var(--pr);
@@ -96,10 +88,9 @@ a:hover {
   border: none;
   color: white;
   background: var(--pr);
-  border-radius: 1em;
-  width: 7em;
+  border-radius: 6rem;
+  width: 17rem;
   grid-area: c;
-  margin-top: 0.5em;
   font-family: var(--scfont);
   justify-self: center;
 }
@@ -107,25 +98,26 @@ a:hover {
   background-color: black;
 }
 .introp {
-  width: auto;
-  margin-left: 8em;
+  width: 41rem;
+  margin-left: 8rem;
   grid-area: b;
   align-self: center;
-  font-size: var(--bodytext);
+  font-size: var(--h3);
   text-justify: distribute;
 }
 
 .servicesheading {
   font-family: var(--scfont);
   font-size: var(--h3);
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 .services {
   display: flex;
   flex-direction: row;
-  margin-top: 6em;
-  padding-bottom: 2em;
+  margin-top: 6rem;
+  padding-bottom: 2rem;
+  width: auto;
 }
 .service {
   display: flex;
@@ -137,9 +129,9 @@ a:hover {
   font-family: var(--prfont);
   text-align: center;
   font-size: var(--bodytext);
+  padding: 0 2rem;
 }
-.serviceimg {
-}
+
 .serviceheading {
   font-family: var(--scfont);
   font-size: var(--bodytext);
@@ -147,56 +139,72 @@ a:hover {
 }
 
 .servicebutton {
+  margin-top: 2rem;
   font-size: var(--bodytext);
 }
 
 .reviews {
   display: flex;
   flex-direction: row;
-  padding: 3em 0;
+  padding: 3rem 0;
 }
 .reviesheading {
   font-size: var(--h3);
   font-family: var(--scfont);
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .review,
 .review1 {
   align-self: center;
   text-align: center;
-  margin-top: 1em;
-  padding: 3em;
+  margin-top: 1rem;
+  padding: 3rem;
 }
 
 .reviewimg {
-  border-radius: 7em;
-  width: 60%;
+  border-radius: 7rem;
+  width: 12rem;
 }
 .reviewheading {
   font-size: var(--h3);
   font-family: var(--scfont);
-  margin-top: 1em;
+  margin-top: 2rem;
   color: var(--pr);
 }
 .reviewp {
   font-size: var(--bodytext);
   font-family: var(--prfont);
+  margin-top: 1rem;
 }
 
 .footer {
+  width: auto;
+  position: relative;
   background-color: var(--pr);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em 1em;
   color: aliceblue;
 }
 .footerlinks i {
-  padding: 2em;
-  font-size: var(--h2);
+  padding: 3rem;
+  font-size: var(--bodytext);
 }
 
 .footer h2 {
   font-family: var(--scfont);
   font-size: var(--h3);
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 305%;
+  }
 }
